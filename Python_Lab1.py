@@ -2,9 +2,9 @@
 def kms_to_miles_converter():
     while True:
         try:
-            distance = abs(float(input('What is the distance in miles?')))
-            miles = distance * 0.6214
-            return ("%.2f miles equals %.2f kilometres" % (distance, miles)) # expected result
+            miles = abs(float(input('What is the distance in miles?')))
+            distance =  miles / 0.6214
+            return ("%.2f miles equals %.2f kilometres" % (miles, distance)) # expected result
         except ValueError:
             print('Use numeric symbols!') # returns to the input
 
